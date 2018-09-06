@@ -1,15 +1,19 @@
 var button = document.querySelector("button");
-var isColored = false;
+// var isPurple = false;
 
 button.addEventListener("click", changeColor);
 
-function changeColor() {
-    if (isColored) {
-        document.body.style.background = "white";
-        isColored = false;
-    } else {
-        document.body.style.background = "purple";
-        isColored = true;
-    }
+// function changeColor() {
+//     if (isPurple) {
+//         document.body.style.background = "white";
+//         isPurple = false;
+//     } else {
+//         document.body.style.background = "purple";
+//         isPurple = true;
+//     }
 
+// }
+
+function changeColor() {
+    document.body.classList.toggle("purple");
 }
